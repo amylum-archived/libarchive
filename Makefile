@@ -4,7 +4,7 @@ ORG = amylum
 BUILD_DIR = /tmp/$(PACKAGE)-build
 RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
-PATH_FLAGS = --prefix=$(RELEASE_DIR) --libdir=$(RELEASE_DIR)/usr/lib --includedir=$(RELEASE_DIR)/usr/include
+PATH_FLAGS = --prefix=$(RELEASE_DIR)/usr --libdir=$(RELEASE_DIR)/usr/lib --includedir=$(RELEASE_DIR)/usr/include
 CONF_FLAGS = --without-xml2
 CFLAGS = -static -static-libgcc -Wl,-static -lc
 
