@@ -1,8 +1,9 @@
 item do
   expected do
-    github_tag
-    repo 'libarchive/libarchive'
-    regex /^v(.*)$/
+    url_xpath
+    url 'http://libarchive.org/'
+    xpath '//*[@id="container"]/ul[1]/li[1]/a[1]'
+    regex /^libarchive-([\d.]+).tar.gz$/
   end
 
   actual do
