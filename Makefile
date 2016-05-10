@@ -28,10 +28,6 @@ container:
 build: submodule
 	rm -rf $(BUILD_DIR)
 	cp -R upstream $(BUILD_DIR)
-	patch -p1 -d $(BUILD_DIR) < patches/0001-Limit-write-requests-to-at-most-INT_MAX.patch
-	patch -p1 -d $(BUILD_DIR) < patches/0001-mtree-fix-line-filename-length-calculation.patch
-	patch -p1 -d $(BUILD_DIR) < patches/libarchive-3.1.2-acl.patch
-	patch -p1 -d $(BUILD_DIR) < patches/libarchive-3.1.2-sparce-mtree.patch
 	cd $(BUILD_DIR) && autoreconf -i
 	cd $(BUILD_DIR) && CC=musl-gcc CFLAGS='$(CFLAGS)' ./configure $(PATH_FLAGS) $(CONF_FLAGS)
 	cd $(BUILD_DIR) && make install
