@@ -1,0 +1,22 @@
+name 'libarchive'
+org 'amylum'
+
+licenses 'COPYING'
+
+configure_flags(
+  prefix: '/usr',
+  'without-xml2': nil
+)
+
+harden
+
+build do
+  run 'autoreconf -i'
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end
