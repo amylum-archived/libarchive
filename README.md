@@ -1,7 +1,7 @@
 libarchive
 ==========
 
-[![Build Status](https://img.shields.io/circleci/project/amylum/libarchive/master.svg)](https://circleci.com/gh/amylum/libarchive)
+[![Build Status](https://img.shields.io/travis/com/amylum/libarchive.svg)](https://travis-ci.com/amylum/libarchive)
 [![GitHub release](https://img.shields.io/github/release/amylum/libarchive.svg)](https://github.com/amylum/libarchive/releases)
 [![BSD licensed](http://img.shields.io/badge/license-BSD-green.svg)](https://tldrlegal.com/license/bsd-2-clause-license-(freebsd))
 
